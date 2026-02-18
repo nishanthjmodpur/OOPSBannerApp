@@ -20,7 +20,7 @@
 // Hint: Use String.join(" ", ...) to the join the parts of each line with spaces.
 
 
-public class OopsBannerStringJoin {
+public class OopsBannerApp {
 	// Main method to run banner display
 	// Use System.out.println() to print each line of the OOPS Banner to create
 	// the visual effect for the message "OOPS". Construct each line using
