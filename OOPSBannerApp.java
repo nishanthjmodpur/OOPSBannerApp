@@ -1,37 +1,70 @@
 /**
- * OOPSBannerApp UC5 - Render OOPS as Banner using Inline Array Initialization
+ * OOPSBannerApp UC6 - OOPS Banner Application (Use Case 6)
  *
- * This use case improves upon UC4 by defining and populating the String array in a more 
- * concise way at the time of declaration using String.join() method to create each
- * line of the banner. This further enchances code readability and maintainability.
+ * This use case extends UC5 by implementing a modular approach to generate each
+ * letter's pattern through dedicated methods. This enchances code reusability and
+ * maintainability by separating pattern generation logic from the main display logic.
  *
  * @author Developer
- * @version 5.0
+ * @version 6.0
  */
 
-// Extend the user story 4 to further develop the OOPS Banner Application by
-// not only using String arrays to hold banner lines and printing them in a
-// loop. But also by defining and populating the array in a more concise way
-// at the time of declaration using String.join() method to create each line
-// of the banner.
+// Extend the User Story 5 to display the OOPS banner using a modular approach
 
 public class OOPSBannerApp {
-	// Main method to run the banner display
-	public static void main(String[] args) {
-		String lines[] = {
-			String.join(" ", "  ****  ", "  ****  ", "*******", "*******"), 
-			String.join(" ", " *    * ", " *    * ", "*     *", "*"), 
-			String.join(" ", "*      *", "*      *", "*     *", "*"), 
-			String.join(" ", "*      *", "*      *", "*******", "*******"), 
-			String.join(" ", "*      *", "*      *", "*      ", "      *"), 
-			String.join(" ", "*      *", "*      *", "*      ", "      *"),
-			String.join(" ", " *    * ", " *    * ", "*      ", "      *"),
-			String.join(" ", "  ****  ", "  ****  ", "*      ", "*******"),
+	// Method to generate the pattern for the letter 'O'
+	public static String[] getOPattern() {
+		return new String[] {
+			"  ****  ",
+			" *    * ",
+			"*      *",
+			"*      *",
+			"*      *",
+			"*      *",
+			" *    * ",
+			"  ****  ",
 		};
-
-		for (String line : lines) {
-			System.out.println(line);
-		}
 	}
 
+	// Method to generate the pattern for the letter 'P'
+	public static String[] getPPattern() {
+		return new String[] {
+			"*******",
+			"*     *",
+			"*     *",
+			"*******",
+			"*      ",
+			"*      ",
+			"*      ",
+			"*      ",
+		};
+	}
+
+	// Method to generate the pattern for the letter 'S'
+	public static String[] getSPattern() {
+		return new String[] {
+			"*******",
+			"*",
+			"*",
+			"*******",
+			"      *",
+			"      *",
+			"      *",
+			"*******",
+		};
+	}
+
+	// Main method to run banner display
+	public static void main(String[] args) {
+		// Declare string arrays to hold patterns for each letter
+		String[] oPattern = getOPattern();
+		String[] pPattern = getPPattern();
+		String[] sPattern = getSPattern();
+
+		// Use the loop to Assemble each line of the banner to create the
+		// visual effect for the message "OOPS"
+		for (int i=0; i<oPattern.length; i++) {
+			System.out.println(oPattern[i] + " " + oPattern[i] + " " + pPattern[i] + " " + sPattern[i]);
+		}
+	}
 }
