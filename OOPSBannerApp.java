@@ -15,7 +15,7 @@
 // and iterating through them with a for-each loop, eliminating hardcoded print
 // statements and improving modularity and reusability.
 
-public class OopsBannerAppArrayLoop {
+public class OopsBannerApp {
 	// Main method to run the banner display
 	public static void main(String[] args) {
 		String lines[] = new String[8];
