@@ -15,11 +15,7 @@
 // at the time of declaration using String.join() method to create each line
 // of the banner.
 
-<<<<<<< HEAD
-public class OopsBannerApp {
-=======
 public class OOPSBannerApp {
->>>>>>> feature/UC5-BannerInlineArray
 	// Main method to run the banner display
 	public static void main(String[] args) {
 		String lines[] = {
