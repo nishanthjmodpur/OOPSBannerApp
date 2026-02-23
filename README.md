@@ -1,7 +1,4 @@
 # OOPSBannerApp #
 
-## UC1 - Print OOPS ##
-    - Coded UC1 to print OOPS on console
-
-## UC2 - Print OOPS ##
-    - Coded UC2 to print OOPS on console using asterisk and spaces on console
+## UC6 - Print OOPS using Static Method ##
+    - Creating seperate methods to build character patterns and using those methods to retrieve the patterns and print OOPS on Console
