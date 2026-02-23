@@ -1,7 +1,4 @@
 # OOPSBannerApp #
 
-## UC1 - Print OOPS ##
-    - Coded UC1 to print OOPS on console
-
-## UC2 - Print OOPS ##
-    - Coded UC2 to print OOPS on console using asterisk and spaces on console
+## UC8 - Print OOPS using HashMap ##
+    - Using HashMap to store ASCII art patterns and printing OOPS on console by retrieving the patterns.
