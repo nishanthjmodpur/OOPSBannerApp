@@ -1,7 +1,4 @@
 # OOPSBannerApp #
 
-## UC1 - Print OOPS ##
-    - Coded UC1 to print OOPS on console
-
-## UC2 - Print OOPS ##
-    - Coded UC2 to print OOPS on console using asterisk and spaces on console
+## UC7 - Print OOPS using Inner Class ##
+    - Coded UC7 to print OOPS using Inner class and getter methods to retrieve the patterns.
